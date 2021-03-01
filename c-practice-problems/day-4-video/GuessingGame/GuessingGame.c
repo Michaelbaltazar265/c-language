@@ -25,8 +25,21 @@ int main ()
     { 
         printf("You win\n");
     }
-    else 
+    else if (input > randomNum)
     { 
-        printf("You lose!\n");
+        printf(" Your number is too high, pick another number lower then %d \n", input);
+        scanf("%d", &input);
+    } 
+
+    // printf("Thank you for playing!\n"); 
+    // return 0; 
+    int x = 24;
+    if (x % 2 == 0 )
+    { 
+        printf("x is divided my 2");
+    }else 
+    { 
+        printf("x is not divided my 2");
     }
+
 }
