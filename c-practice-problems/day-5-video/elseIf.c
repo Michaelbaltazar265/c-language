@@ -35,6 +35,20 @@ int main ()
     }
     else if (input == 4){ 
         printf("Exiting...\n");
+        printf("Do you want to save? Y/N\n"); 
+        char q; 
+        getchar();
+        scanf("%c", &q);
+
+        if (q == 'Y' || q == 'y')
+        { 
+             printf("Saving changes!"); 
+        } else if ( q == 'N' || q == 'n')
+        { 
+            printf("No changes are being saved"); 
+        } else { 
+            printf("Self destracting in 5...4..3.2,1!    BOOM!\n");
+        }
     } else { 
         printf("Wrong input\n");
     }
